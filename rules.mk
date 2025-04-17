@@ -14,7 +14,8 @@ AUDIO_ENABLE = no           # Audio output
 RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 OLED_ENABLE = no            # OLED display
-VIA_ENABLE = yes            # Enable Via website to work
+VIA_ENABLE = no            # Enable Via website to work/ its broken and cant show custom layout even on rev1 and r2g
+VIAL_ENABLE = yes
 
 
 
