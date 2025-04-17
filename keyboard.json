@@ -1,8 +1,6 @@
 {
     "manufacturer": "Cody McKinney",
     "keyboard_name": "lily58custom",
-    "vendorId": "0xFEED",
-    "productId": "0x6060",
     "url": "",
     "maintainer": "clm302002",
     "processor": "atmega32u4",
