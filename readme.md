@@ -1,27 +1,34 @@
 # lily58custom
 
-![lily58custom](imgur.com image replace me!)
+> ⚠️ **DO NOT USE THIS REPO UNLESS YOU KNOW EXACTLY WHAT YOU'RE DOING**  
+> This project is heavily customized for a **non-standard Lily58 layout**, and **will not work out of the box** on typical builds. It includes custom matrix changes, additional columns, and hardware-specific modifications.
 
-*A short description of the keyboard/project*
+---
 
-* Keyboard Maintainer: [Cody McKinney](https://github.com/clm302002)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+## Overview
 
-Make example for this keyboard (after setting up your build environment):
+This fork of the Lily58 is tailored specifically for experimental hardware mods and layout changes. It is **not compatible** with standard QMK Lily58 firmware or configurations.
 
-    make lily58custom:default
+Key modifications and goals include:
 
-Flashing example for this keyboard:
+- **Custom column wiring** on the left half of the board for experimental key/button placement.
+- Integration of the **Adafruit ANO Directional Navigation and Scroll Wheel Rotary Encoder**:  
+  🔗 https://www.adafruit.com/product/5001?gQT=1
+- Addition of a **Cirque 40mm GlidePoint Trackpad** on the right half for cursor control.
+- Dual **OLED screen support** (both halves) with adjusted positioning to remain visible even with additional hardware.
+- Symmetric positioning of rotary and trackpad components for visual balance.
 
-    make lily58custom:default:flash
+---
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+## Maintainer
 
-## Bootloader
+* Cody McKinney – [GitHub](https://github.com/clm302002)
 
-Enter the bootloader in 3 ways:
+---
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+## Building
+
+Make example for this keyboard:
+
+```bash
+make lily58custom:default
