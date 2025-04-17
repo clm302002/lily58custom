@@ -32,8 +32,10 @@ This fork of the Lily58 is tailored specifically for experimental hardware mods 
     - **Cirque trackpad mount**
 
 ## Building
+This folder needs to be downloaded into your qmk_firmware/keyboards/ folder so that qmk can build it using QMK MSYS.
 
-Make example for this keyboard:
+Make example for this keyboard: using QMK MSYS
 
 ```bash
-make lily58custom:default
+qmk compile -kb lily58custom -km default -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_default.hex ~/qmk_firmware/.build/lily58_left.hex
+qmk compile -kb lily58custom -km default -e KEYMAP_SUFFIX=right && mv ~/qmk_firmware/.build/lily58custom_default.hex ~/qmk_firmware/.build/lily58_right.hex
