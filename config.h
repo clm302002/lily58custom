@@ -1,21 +1,26 @@
 #pragma once
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 4
-#define DIODE_DIRECTION COL2ROW
 #define TAPPING_TERM 100
 #define QUICK_TAP_TERM 0
-#define MASTER_LEFT
+#define MASTER_RIGHT
 
 #ifdef VIA_ENABLE
 #    define VIA_KEYBOARD_UID {0xB4, 0x19, 0x77, 0x63, 0xAC, 0xE2, 0x01, 0x4D}
 #endif
 
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_LED_COUNT 29
+#    define RGB_MATRIX_LED_COUNT 29        // total number of all LEDs chained together
+#    define DRIVER_LED_TOTAL 29
+#    define RGB_DI_PIN D3                  // update if you're using another pin
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120
-#    define RGB_MATRIX_HUE_STEP 10
-#    define RGB_MATRIX_SAT_STEP 17
-#    define RGB_MATRIX_VAL_STEP 17
+#    define RGB_MATRIX_DEFAULT_VAL 120     // sets 50% brightness on boot
+#    define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR
+#    define RGB_MATRIX_DEFAULT_HUE 0
+#    define RGB_MATRIX_DEFAULT_SAT 255
+#    define RGB_DISABLE_AFTER_TIMEOUT 0    // stay on always
+#    define RGB_MATRIX_KEYPRESSES          // optional: effects react to keypresses
+#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS // optional: additional animated effects
 #endif
 
 #ifdef RGBLIGHT_ENABLE
@@ -41,10 +46,21 @@
 // ========== RIGHT ==========
 // ------------------------
 #if defined(KEYMAP_SUFFIX_right)
-// Cirque Trackpad
-#    define SPLIT_POINTING_ENABLE
-#    define POINTING_DEVICE_RIGHT
-#    define I2C1_SDA_PIN D1
-#    define I2C1_SCL_PIN D0
-#    define CIRQUE_PINNACLE_I2C_ADDRESS 0x2A
+// Cirque Trackpad configuration
+#    define SPLIT_POINTING_ENABLE  // Enable split support for pointing devices
+#    define POINTING_DEVICE_RIGHT  // The Cirque is on the right (master) side
+#    define I2C1_SDA_PIN D1        // I2C data pin
+#    define I2C1_SCL_PIN D0        // I2C clock pin
+#    define CIRQUE_PINNACLE_I2C_ADDRESS 0x2A  // Default I2C address for Cirque Pinnacle
+#    define CIRQUE_PINNACLE_DIAMETER_MM 40   // Set to your trackpad's diameter in mm
+#    define CIRQUE_PINNACLE_TAP_ENABLE       // Enable tap-to-click support
+#    define POINTING_DEVICE_GESTURES_SCROLL_ENABLE  // Enable circular scroll gesture
+//#    define POINTING_DEVICE_ROTATION_90      // Rotate input 90° CW to correct mounting orientation
+// #    define POINTING_DEVICE_ROTATION_180   // Uncomment if mounted upside-down (180°)
+#    define POINTING_DEVICE_ROTATION_270   // Uncomment for 90° CCW
+#    define CIRQUE_PINNACLE_DIAGONAL_SENSITIVITY 64  // Increase diagonal responsiveness (0–127)
+#    define CIRQUE_PINNACLE_DRAG_LOCK true   // Enable drag-lock (tap-and-hold to drag)
+#    define CIRQUE_PINNACLE_Z_IDLE_COUNTS 10 // Lower idle counts for faster tap detection
+#    define CIRQUE_PINNACLE_SENSITIVITY 0x0F // Overall sensitivity (0x00–0x7F)
+#    define POINTING_DEVICE_TASK_THROTTLE_MS 1  // Increase report rate (lower is faster updates)
 #endif
