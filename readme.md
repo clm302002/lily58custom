@@ -37,5 +37,5 @@ This folder needs to be downloaded into your qmk_firmware/keyboards/ folder so t
 Make example for this keyboard: using QMK MSYS, need to 
 
 ```bash
-qmk compile -kb lily58custom -km default -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_default.hex ~/qmk_firmware/.build/lily58_left.hex
-qmk compile -kb lily58custom -km default -e KEYMAP_SUFFIX=right && mv ~/qmk_firmware/.build/lily58custom_default.hex ~/qmk_firmware/.build/lily58_right.hex
+qmk compile -kb lily58custom -km mytest -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_mytest.hex ~/qmk_firmware/.build/lily58_left.hex
+qmk compile -kb lily58custom -km mytest -e KEYMAP_SUFFIX=right && mv ~/qmk_firmware/.build/lily58custom_mytest.hex ~/qmk_firmware/.build/lily58_right.hex
