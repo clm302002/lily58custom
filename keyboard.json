@@ -25,6 +25,12 @@
         "enabled": true,
         "serial": {
             "pin": "D2"
+        },
+        "matrix_pins":{
+            "right": {
+                "rows": ["C6", "D7", "E6", "B4", "B5"],
+                "cols": ["F6", "F7", "B1", "B3", "B2", "B6"]
+            }
         }
     },
     "layouts": {
