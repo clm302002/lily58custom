@@ -1,9 +1,17 @@
-#pragma once
+/*
+ * Copyright 2025 Cody McKinney
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ */
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 4
-#define TAPPING_TERM 100
-#define QUICK_TAP_TERM 0
-#define MASTER_RIGHT
+ #pragma once
+
+#define MASTER_LEFT        // MASTER_LEFT, MASTER_RIGHT, EE_HANDS
+// #define FLIP_HALF
+
 
 #ifdef VIA_ENABLE
 #    define VIA_KEYBOARD_UID {0xB4, 0x19, 0x77, 0x63, 0xAC, 0xE2, 0x01, 0x4D}
@@ -55,7 +63,7 @@
 #    define CIRQUE_PINNACLE_DIAMETER_MM 40   // Set to your trackpad's diameter in mm
 #    define CIRQUE_PINNACLE_TAP_ENABLE       // Enable tap-to-click support
 #    define POINTING_DEVICE_GESTURES_SCROLL_ENABLE  // Enable circular scroll gesture
-//#    define POINTING_DEVICE_ROTATION_90      // Rotate input 90° CW to correct mounting orientation
+// #    define POINTING_DEVICE_ROTATION_90      // Rotate input 90° CW to correct mounting orientation
 // #    define POINTING_DEVICE_ROTATION_180   // Uncomment if mounted upside-down (180°)
 #    define POINTING_DEVICE_ROTATION_270   // Uncomment for 90° CCW
 #    define CIRQUE_PINNACLE_DIAGONAL_SENSITIVITY 64  // Increase diagonal responsiveness (0–127)

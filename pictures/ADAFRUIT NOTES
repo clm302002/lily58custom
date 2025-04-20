@@ -1,0 +1,9 @@
+Pin Sharing Note (COMA / COMB):
+
+The following components share pins with COMA and COMB:
+
+    COMA: SW1, ENCA, ENCB
+
+    COMB: SW2, SW3, SW4, SW5
+
+To simplify wiring, switches connected to the B pins were configured as columns in keyboard.json. This allows all switches to share a common power line, with diodes placed on the row ends. Configuration was verified using a voltmeter.
