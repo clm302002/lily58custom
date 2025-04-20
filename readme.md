@@ -4,7 +4,7 @@
 > This project is heavily customized for a **non-standard Lily58 layout**, and **will not work out of the box** on typical builds. It includes custom matrix changes, additional columns, and hardware-specific modifications.
 
 ---
-
+![Alt text](pictures/My%20Lily58%20Assembled.jpg)
 ## Overview
 
 This fork of the Lily58 is tailored specifically for experimental hardware mods and layout changes. It is **not compatible** with standard QMK Lily58 firmware or configurations.
@@ -34,7 +34,7 @@ This fork of the Lily58 is tailored specifically for experimental hardware mods 
 ## Building
 This folder needs to be downloaded into your qmk_firmware/keyboards/ folder so that qmk can build it using QMK MSYS.
 
-Make example for this keyboard: using QMK MSYS
+Make example for this keyboard: using QMK MSYS, need to 
 
 ```bash
 qmk compile -kb lily58custom -km default -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_default.hex ~/qmk_firmware/.build/lily58_left.hex
