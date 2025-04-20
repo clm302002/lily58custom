@@ -71,4 +71,7 @@
 #    define CIRQUE_PINNACLE_Z_IDLE_COUNTS 10 // Lower idle counts for faster tap detection
 #    define CIRQUE_PINNACLE_SENSITIVITY 0x0F // Overall sensitivity (0x00–0x7F)
 #    define POINTING_DEVICE_TASK_THROTTLE_MS 1  // Increase report rate (lower is faster updates)
+// Adjust Cirque trackpad sensitivity: lower values = more sensitive, higher = less
+// Recommended to reduce attenuation (e.g., 2X) if using an overlay or thick cover
+#    define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_2X
 #endif
