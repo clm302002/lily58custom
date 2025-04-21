@@ -9,7 +9,7 @@
 
  #pragma once
 
-#define MASTER_LEFT        // MASTER_LEFT, MASTER_RIGHT, EE_HANDS
+#define MASTER_RIGHT        // MASTER_LEFT, MASTER_RIGHT, EE_HANDS
 // #define FLIP_HALF
 
 
