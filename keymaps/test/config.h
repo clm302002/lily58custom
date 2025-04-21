@@ -14,7 +14,10 @@
 #define RGBLIGHT_LED_COUNT 72
   // total number of RGB LEDs
   // Replace 27 with your total number of RGB LEDs
-
+#define SPLIT_RGB_ENABLE
+#define NO_SUSPEND_POWER_DOWN
+#define ENCODER_A_PINS { F4 }
+#define ENCODER_B_PINS { F5 }
 
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_LED_COUNT 74        // total number of all LEDs chained together
@@ -42,12 +45,7 @@
 // ------------------------
 // ========== LEFT ==========
 // ------------------------
-#if defined(KEYMAP_SUFFIX_left)
-#    define ENCODER_A_PINS { F4 }
-#    define ENCODER_B_PINS { F5 }
-// Mute button on D3 (direct pin) - TAKEN BY RGB?!??!?!
-//#    define DIRECT_PINS { { D3 } }
-#endif
+
 
 // ------------------------
 // ========== RIGHT ==========

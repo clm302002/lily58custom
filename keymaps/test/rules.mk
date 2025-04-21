@@ -12,7 +12,8 @@ RGBLIGHT_ENABLE = yes        # Enable WS2812 RGB underlight.
 RGB_MATRIX_ENABLE = no
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 VIA_ENABLE = yes            # Enable Via website to work/ its broken and cant show custom layout even on rev1 and r2g
-
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
 
 # Allow config.h to detect left/right builds
 EXTRAFLAGS += -DKEYMAP_SUFFIX_$(KEYMAP_SUFFIX)
@@ -20,8 +21,6 @@ EXTRAFLAGS += -DKEYMAP_SUFFIX_$(KEYMAP_SUFFIX)
 ## ========== LEFT ==========
 ## ------------------------
 ifeq ($(KEYMAP_SUFFIX), left)
-    ENCODER_ENABLE = yes
-	ENCODER_MAP_ENABLE = yes
     POINTING_DEVICE_ENABLE = no
     OLED_ENABLE = yes
 endif
@@ -30,7 +29,6 @@ endif
 ## ========== RIGHT ==========
 ## ------------------------
 ifeq ($(KEYMAP_SUFFIX), right)
-    ENCODER_ENABLE = no
     POINTING_DEVICE_ENABLE = yes
 	POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
     OLED_ENABLE = no
