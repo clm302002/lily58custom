@@ -10,12 +10,8 @@
  #pragma once
 
 #define MASTER_RIGHT        // MASTER_LEFT, MASTER_RIGHT, EE_HANDS
-// #define FLIP_HALF
+// #define FLIP_HALF        // NOT USING LAYOUT.H THIS IS OUTDATED
 
-
-#ifdef VIA_ENABLE
-#    define VIA_KEYBOARD_UID {0xB4, 0x19, 0x77, 0x63, 0xAC, 0xE2, 0x01, 0x4D}
-#endif
 
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_LED_COUNT 29        // total number of all LEDs chained together

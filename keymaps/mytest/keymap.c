@@ -1,10 +1,7 @@
 #include QMK_KEYBOARD_H
-// #include "layout.h"
-// #include "quantum.h"
 
-
-#include "print.h"  // debugging
-#include "action.h" // dubugging
+// #include "print.h"  // debugging
+// #include "action.h" // dubugging
 
 // ------------------------
 // ========== CIRQUE TRACKPAD ==========
