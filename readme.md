@@ -30,7 +30,7 @@ This fork of the Lily58 is tailored specifically for experimental hardware mods 
     - **Thick top plate**
     - **Rotary encoder mount**
     - **Cirque trackpad mount**
-- For now there are other parts ive been using with some modifications, they can be found here under the original creators. 
+- For now there are other parts ive been using with some modifications, they can be found here under the original creators.
     - **[Angled 40mm Cirque](https://www.printables.com/model/409016-angled-40mm-cirque-trackpad-holder-for-lily58)**
     - **[Lily58 High-Profile Case](https://www.thingiverse.com/thing:4486280)**
     - **[DES keycaps for keyboard (Cherry MX version)](https://www.printables.com/model/865075-des-keycaps-for-keyboard-cherry-mx-version)**
