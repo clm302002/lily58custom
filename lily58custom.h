@@ -9,3 +9,7 @@
 #pragma once
 // #include "layout.h"
 #include "quantum.h"
+
+#ifdef VIA_ENABLE
+#    define VIA_KEYBOARD_UID {0xB4, 0x19, 0x77, 0x63, 0xAC, 0xE2, 0x01, 0x4D}
+#endif
