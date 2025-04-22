@@ -16,6 +16,7 @@
   // Replace 27 with your total number of RGB LEDs
 #define SPLIT_RGB_ENABLE
 #define NO_SUSPEND_POWER_DOWN
+#define SPLIT_ENCODERS_ENABLE
 #define ENCODER_A_PINS { F4 }
 #define ENCODER_B_PINS { F5 }
 
