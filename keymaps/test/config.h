@@ -10,13 +10,11 @@
  #pragma once
 
 #define MASTER_RIGHT        // MASTER_LEFT, MASTER_RIGHT, EE_HANDS
-// #define FLIP_HALF        // NOT USING LAYOUT.H THIS IS OUTDATED
-#define RGBLIGHT_LED_COUNT 72
-  // total number of RGB LEDs
-  // Replace 27 with your total number of RGB LEDs
-#define SPLIT_RGB_ENABLE
 #define NO_SUSPEND_POWER_DOWN
+
 #define SPLIT_ENCODERS_ENABLE
+#define SPLIT_TRANSPORT_MIRROR
+#define SPLIT_RGB_ENABLE
 #define ENCODER_A_PINS { F4 }
 #define ENCODER_B_PINS { F5 }
 
@@ -41,6 +39,7 @@
 #    define RGBLIGHT_HUE_STEP 10
 #    define RGBLIGHT_SAT_STEP 17
 #    define RGBLIGHT_VAL_STEP 17
+#    define RGBLIGHT_LED_COUNT 72     // total number of RGB LEDs
 #endif
 
 // ------------------------

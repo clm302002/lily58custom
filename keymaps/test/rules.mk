@@ -14,6 +14,7 @@ SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 VIA_ENABLE = yes            # Enable Via website to work/ its broken and cant show custom layout even on rev1 and r2g
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
+SPLIT_KEYBOARD = yes
 
 # Allow config.h to detect left/right builds
 EXTRAFLAGS += -DKEYMAP_SUFFIX_$(KEYMAP_SUFFIX)
