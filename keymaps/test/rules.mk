@@ -9,6 +9,7 @@ NKRO_ENABLE = no            # N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 AUDIO_ENABLE = no           # Audio output
 RGBLIGHT_ENABLE = yes        # Enable WS2812 RGB underlight.
+RGBLIGHT_SPLIT = yes
 RGB_MATRIX_ENABLE = no
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 VIA_ENABLE = yes            # Enable Via website to work/ its broken and cant show custom layout even on rev1 and r2g

@@ -43,3 +43,15 @@ Make example for this keyboard: using QMK MSYS, need to
 ```bash
 qmk compile -kb lily58custom -km test -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_test.hex ~/qmk_firmware/.build/lily58_left.hex
 qmk compile -kb lily58custom -km test -e KEYMAP_SUFFIX=right && mv ~/qmk_firmware/.build/lily58custom_test.hex ~/qmk_firmware/.build/lily58_right.hex
+
+## Flashing Firmware
+
+Once both firmware files are compiled (`lily58_left.hex` and `lily58_right.hex`), flash them to their respective halves using the Caterina bootloader (used by Pro Micro ATmega32u4 controllers).
+
+> ⚠️ **Always flash both halves when making config changes to prevent mismatches.**
+
+### Flash Command – Right Half
+
+```bash
+qmk flash ~/qmk_firmware/.build/lily58_right.hex --bootloader caterina
+qmk flash ~/qmk_firmware/.build/lily58_left.hex --bootloader caterina
