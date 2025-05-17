@@ -16,6 +16,7 @@ VIA_ENABLE = yes            # Enable Via website to work/ its broken and cant sh
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 SPLIT_KEYBOARD = yes
+#OLED_ENABLE = yes
 
 # Allow config.h to detect left/right builds
 EXTRAFLAGS += -DKEYMAP_SUFFIX_$(KEYMAP_SUFFIX)

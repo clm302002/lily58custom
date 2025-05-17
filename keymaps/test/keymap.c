@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "OLED.h"
 
 // #include "print.h"  // debugging
 // #include "action.h" // dubugging
@@ -9,14 +10,6 @@
 #ifdef POINTING_DEVICE_ENABLE
 #include "pointing_device.h"
 #endif
-
-// ------------------------
-// ========== OLED ==========
-// ------------------------
-#ifdef OLED_ENABLE
-#include "OLED.h"
-#endif
-
 
 // ------------------------
 // ========== DIRECT PIN ========== RGB IS DEFINED TO D3!!!!!
@@ -40,15 +33,16 @@
 // #endif
 
 // ------------------------
-// ========== KEYMAPING ==========
+// ========== KEYMAPING ========== its been entered in the OLED.h.  uncomment if not using.
 // ------------------------
 // Layer enum
-enum layer_number {
-  _QWERTY = 0,
-  _LOWER,
-  _RAISE,
-  _ADJUST,
-};
+
+// enum layer_number {
+//   _QWERTY = 0,
+//   _LOWER,
+//   _RAISE,
+//   _ADJUST
+// };
 
 
 // Keymaps

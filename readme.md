@@ -1,6 +1,6 @@
 # lily58custom
 
-> ⚠️ **DO NOT USE THIS REPO UNLESS YOU KNOW EXACTLY WHAT YOU'RE DOING**  
+> ⚠️ **DO NOT USE THIS REPO UNLESS YOU KNOW EXACTLY WHAT YOU'RE DOING - I AM NOT RESPONSIBLE IF YOU BREAK SOMETHING**  
 > This project is heavily customized for a **non-standard Lily58 layout**, and **will not work out of the box** on typical builds. It includes custom matrix changes, additional columns, and hardware-specific modifications.
 
 ---
@@ -38,13 +38,19 @@ This fork of the Lily58 is tailored specifically for experimental hardware mods 
 ## Building
 This folder needs to be downloaded into your qmk_firmware/keyboards/ folder so that qmk can build it using QMK MSYS.
 
-Make example for this keyboard: using QMK MSYS, need to 
+
+### Entering QMK on Arch Linux
+
+```bash
+cd ~/qmk_firmware
+```
+### Make example for this keyboard: using QMK MSYS, need to 
 
 ```bash
 qmk compile -kb lily58custom -km test -e KEYMAP_SUFFIX=left && mv ~/qmk_firmware/.build/lily58custom_test.hex ~/qmk_firmware/.build/lily58_left.hex
 qmk compile -kb lily58custom -km test -e KEYMAP_SUFFIX=right && mv ~/qmk_firmware/.build/lily58custom_test.hex ~/qmk_firmware/.build/lily58_right.hex
-
-## Flashing Firmware
+```
+### Flashing Firmware
 
 Once both firmware files are compiled (`lily58_left.hex` and `lily58_right.hex`), flash them to their respective halves using the Caterina bootloader (used by Pro Micro ATmega32u4 controllers).
 
@@ -55,3 +61,4 @@ Once both firmware files are compiled (`lily58_left.hex` and `lily58_right.hex`)
 ```bash
 qmk flash ~/qmk_firmware/.build/lily58_right.hex --bootloader caterina
 qmk flash ~/qmk_firmware/.build/lily58_left.hex --bootloader caterina
+```
