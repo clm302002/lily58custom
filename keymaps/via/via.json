@@ -2,6 +2,12 @@
   "name": "lily58custom",
   "vendorId": "0x04D8",
   "productId": "0xEB2E",
+  "features": {
+    "via": true,
+    "rgblight": true
+  },
+  "menus": ["qmk_rgblight"],
+  "keycodes": ["qmk_lighting"],
   "matrix": {
     "rows": 10,
     "cols": 7

@@ -59,11 +59,11 @@
 // 🌈 RGB Light Settings (if enabled)
 // ───────────────────────────────
 #ifdef RGBLIGHT_ENABLE
-#    define RGBLED_NUM 72
-#    define RGBLIGHT_LED_COUNT RGBLED_NUM
+//#    define RGBLED_NUM 72              //this was added in the keyboard.json
+//#    define RGBLIGHT_LED_COUNT RGBLED_NUM     //this was added in the keyboard.json  
 #    define RGBLED_SPLIT { 36, 36 }
 #    define RGBLIGHT_LIMIT_VAL 120
-#    define RGBLIGHT_HUE_STEP 10
+#    define RGBLIGHT_HUE_STEP 1
 #    define RGBLIGHT_SAT_STEP 17
 #    define RGBLIGHT_VAL_STEP 17
 #    define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT

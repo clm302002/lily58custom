@@ -15,10 +15,11 @@
  */
 
 #include "quantum.h"
-#pragma once
 #include QMK_KEYBOARD_H
 
-// --- Layer Labels ---
+#pragma once
+
+// --- Layer Labels --- these must match inside the keymap.c
 enum custom_layers {
     _QWERTY = 0,
     _LOWER,
