@@ -17,7 +17,7 @@
       "KC_E",
       "KC_R",
       "KC_T",
-      "KC_MSTP",
+      "KC_MUTE",
       "KC_LCTL",
       "KC_A",
       "KC_S",
@@ -69,7 +69,7 @@
       "KC_NO",
       "KC_NO",
       "MO(2)",
-      "KC_RGUI",
+      "MO(3)",
       "KC_BSPC",
       "KC_ENT",
       "KC_RBRC",
@@ -168,7 +168,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_NO",
+      "KC_F2",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
@@ -179,7 +179,7 @@
       "KC_NO",
       "KC_LALT",
       "KC_LGUI",
-      "MO(3)",
+      "MO(1)",
       "KC_SPC",
       "KC_TRNS",
       "KC_NO",
@@ -213,7 +213,7 @@
       "KC_NO",
       "KC_NO",
       "MO(2)",
-      "KC_RGUI",
+      "MO(3)",
       "KC_BSPC",
       "KC_ENT",
       "KC_TRNS",
@@ -285,7 +285,7 @@
       "KC_NO",
       "KC_NO",
       "MO(2)",
-      "KC_RGUI",
+      "MO(3)",
       "KC_BSPC",
       "KC_ENT",
       "KC_RBRC",
@@ -297,7 +297,7 @@
       ["KC_VOLU", "KC_VOLD"],
       ["RGB_VAI", "RGB_VAD"],
       ["RGB_HUI", "RGB_HUD"],
-      ["KC_NO", "KC_NO"]
+      ["RGB_SAI", "RGB_SAD"]
     ]
   ]
 }

@@ -1,5 +1,5 @@
 # Core features
-# LTO_ENABLE = yes            # Link Time Optimization enabled
+ LTO_ENABLE = yes            # Link Time Optimization enabled
 # BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control, needed for encoder volume
@@ -17,6 +17,10 @@ ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 SPLIT_KEYBOARD = yes
 #OLED_ENABLE = yes
+RGBLIGHT_ANIMATIONS = no
+RGBLIGHT_EFFECT_BREATHING = no
+RGBLIGHT_EFFECT_RAINBOW_MOOD = no
+
 
 # Allow config.h to detect left/right builds
 EXTRAFLAGS += -DKEYMAP_SUFFIX_$(KEYMAP_SUFFIX)
@@ -34,5 +38,11 @@ endif
 ifeq ($(KEYMAP_SUFFIX), right)
     POINTING_DEVICE_ENABLE = yes
 	POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
-    OLED_ENABLE = no
+    OLED_ENABLE = yes
+    CONSOLE_ENABLE = no
+    COMMAND_ENABLE = no
+    MOUSEKEY_ENABLE = no
+    TAP_DANCE_ENABLE = no
+    SPLIT_WPM_ENABLE = no
+    SPLIT_TRANSPORT_MIRROR = no
 endif
